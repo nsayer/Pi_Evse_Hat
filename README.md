@@ -1,6 +1,8 @@
 # Pi_Evse_Hat
 Software for https://hackaday.io/project/167595-raspberry-pi-evse-hat
 
+_This is presently an incomplete work-in-progress._
+
 The Pi EVSE hat is a board with a number of separate subsystems combined to add up to everything required for an electric vehicle charging station (EVSE).
 
 The code here is in Python, which meshes properly with the Raspberry Pi GPIO Python library. In addition, we require the Python SPI library (and for the SPI bus to be enabled) to talk to the ADC chip, as well as hardware PWM support. Alas, there is no Python library for that. We need to manually open files in /sys/class (or perhaps write our own library).
